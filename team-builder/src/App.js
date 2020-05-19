@@ -18,6 +18,7 @@ function App() {
     setRole(event.target.value);
   }
   const onSubmit = event => {
+    event.preventDefault();
     console.log(team);
     console.log("Submitted!");
     setTeam(team.concat({
@@ -29,13 +30,16 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Member List</h1>
       <div className="member-list">
-        {team.map((member) => {
+        {team.map((member, i) => {
           return (
             <div className="member-card">
-              <h1>{member.name}</h1>
-              <h2>{member.email}</h2>
+              
               <h2>{member.role}</h2>
+              <h3>{member.name}</h3>
+              <h3>{member.email}</h3>
+              <h4>{i + 1}</h4>
             </div>
           )
         })}
