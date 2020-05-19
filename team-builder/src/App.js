@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Form from "./components/form";
+import Cards from "./components/cards";
 import "./App.css";
 
 function App() {
@@ -30,20 +31,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Member List</h1>
-      <div className="member-list">
-        {team.map((member, i) => {
-          return (
-            <div className="member-card">
-              
-              <h2>{member.role}</h2>
-              <h3>{member.name}</h3>
-              <h3>{member.email}</h3>
-              <h4>{i + 1}</h4>
-            </div>
-          )
-        })}
-      </div>
+      <h1>Conquest Team</h1>
+      <Cards team={team} setTeam={setTeam} />
       <Form onSubmit={onSubmit} onChangeEmail={onChangeEmail} onChangeName={onChangeName} onChangeRole={onChangeRole} />
     </div>
   );

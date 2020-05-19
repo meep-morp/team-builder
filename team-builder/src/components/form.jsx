@@ -1,6 +1,12 @@
 import React from "react"
+import { useEffect } from "react";
 const Form = props => {
-    const { onSubmit, onChangeEmail, onChangeName, onChangeRole } = props;
+    const { onSubmit,
+        onChangeEmail,
+        onChangeName,
+        onChangeRole,
+        memberToEdit } = props;
+
     return (
 
         <form className="forms">

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
     background-image: url(./images/414769.jpg);
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-shadow: 0 0 5px black, 0 0 5px black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .App{
@@ -23,12 +26,20 @@ body {
 }
 
 .member-card {
-    background-color: rgba(228, 218, 85, 0.719);
+    background-color: rgba(10, 14, 20, 0.671);
     border: 2px solid black;
     padding: 2%;
     text-align: center;
     width: 20%;
     margin: 10px;
+}
+
+.edit {
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    background: rgb(209, 199, 54);
 }
 
 .forms {
@@ -39,7 +50,7 @@ body {
 input {
     margin: 10px;
     height: 18px;
-    background-color: rgb(109, 169, 218);
+    background-color: rgb(136, 170, 233);
     color: white;
     border: none;
     border-radius: 10px;
@@ -60,8 +71,8 @@ input:focus {
 
 select {
     margin: 10px;
-    background-color: rgb(130, 160, 214);
-    color: white;
+    background-color: rgb(209, 199, 54);
+    color: black;
 }
 
 #submitButton {
