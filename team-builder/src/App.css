@@ -13,16 +13,21 @@ body {
     color: white;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 14%;
 }
 
 .member-list {
-    color: white;
     display: flex;
+    width: 98vw;
     flex-direction: row;
     flex-wrap: wrap;
+    color: white;
     align-items: center;
     justify-content: center;
+}
+
+.container {
+    width: 30%;
 }
 
 .member-card {
@@ -30,7 +35,7 @@ body {
     border: 2px solid black;
     padding: 2%;
     text-align: center;
-    width: 20%;
+    width: 90%;
     margin: 10px;
 }
 
@@ -40,6 +45,13 @@ body {
     font-weight: bold;
     padding: 10px;
     background: rgb(209, 199, 54);
+    border-radius: 10px;
+}
+
+.edit:hover {
+    transition: 0.3s ease;
+    background-color: white;
+    color: black;
 }
 
 .forms {
@@ -50,7 +62,7 @@ body {
 input {
     margin: 10px;
     height: 18px;
-    background-color: rgb(136, 170, 233);
+    background-color: rgb(172, 195, 238);
     color: white;
     border: none;
     border-radius: 10px;
@@ -71,13 +83,22 @@ input:focus {
 
 select {
     margin: 10px;
-    background-color: rgb(209, 199, 54);
+    background-color: rgb(147, 181, 236);
     color: black;
 }
 
 #submitButton {
-    width: 10%;
+    color: black;
+    font-weight: bold;
+    width: 17.4%;
+    padding: 0px;
     height: 20px;
+    background-color: rgb(231, 185, 58);
+}
+
+#submitButton:hover {
+    background-color: white;
+    transition: 0.3s ease;
 }
 
 form {
@@ -86,4 +107,13 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.editForm {
+    background-color: rgba(10, 14, 20, 0.671);
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    width: 90%;
+    margin: 10px;
 }

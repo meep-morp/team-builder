@@ -1,22 +1,22 @@
 import React from "react"
 import { useEffect } from "react";
 const Form = props => {
-    const { onSubmit,
-        onChangeEmail,
-        onChangeName,
-        onChangeRole,
-        memberToEdit } = props;
+    const {
+        onSubmit,
+        onChangeHandler,
+        value,
+    } = props;
+
 
     return (
 
         <form className="forms">
-            <h2>Sign-Up</h2>
             <label>Name:</label>
-            <input type="text" name="name" onChange={onChangeName} />
+            <input type="text" name="name" onChange={onChangeHandler} />
             <label>Email: </label>
-            <input type="text" name="email" onChange={onChangeEmail} />
+            <input type="text" name="email" onChange={onChangeHandler} />
             <label>Role: </label>
-            <select id="role" onChange={onChangeRole} >
+            <select name="role" onChange={onChangeHandler} >
                 <option value="selectRole">Select Role</option>
                 <option value="Jungle">Jungle</option>
                 <option value="Mid-Lane">Mid-Lane</option>
