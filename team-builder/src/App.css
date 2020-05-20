@@ -18,16 +18,16 @@ body {
 
 .member-list {
     display: flex;
-    width: 98vw;
-    flex-direction: row;
     flex-wrap: wrap;
-    color: white;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    width: 30%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .member-card {
@@ -35,7 +35,7 @@ body {
     border: 2px solid black;
     padding: 2%;
     text-align: center;
-    width: 90%;
+    width: 30%;
     margin: 10px;
 }
 

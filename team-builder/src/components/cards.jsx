@@ -4,12 +4,11 @@ import { useEffect } from "react";
 
 const Cards = props => {
     const {
-        onChangeHandler,
         member,
+        setMessage,
         edit,
         setEdit,
-        onEdit,
-        value } = props;
+        onEdit, } = props;
     const [isEditing, setIsEditing] = useState(false);
 
     return (
@@ -33,12 +32,13 @@ const Cards = props => {
                             setIsEditing(false);
                             onEdit();
                         }} onChangeHandler={event => {
-                            console.log(edit);
+                            setMessage("")
                             setEdit({
                                 ...edit,
                                 [event.target.name]: event.target.value,
                             })
                         }}
+                            setMessage={setMessage}
                             member={member} />
                     </div>
             }
